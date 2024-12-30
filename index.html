@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <center>
+        <h2>Project 27</h2>
+
+
+
+        <button onclick="sortfunction()">Sort me</button>
+        <br>
+        <br>
+        <button onclick="reversefunction()">Reverse me</button>
+
+        <p id="result"></p>
+
+        <script>
+
+            var colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet",];
+
+            document.getElementById("result").innerHTML = colors;
+            function sortfunction() {
+
+                colors.sort();
+                document.getElementById("result").innerHTML = colors;
+            }
+            function reversefunction() {
+
+                colors.reverse();
+                document.getElementById("result").innerHTML = colors;
+            }
+        </script>
+    </center>
+</body>
+
+</html>
